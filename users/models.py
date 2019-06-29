@@ -2,11 +2,12 @@ from django.db import models
 import requests
 from django.contrib.auth.models import AbstractUser
 
-
 from allauth.socialaccount.signals import pre_social_login
+
 
 class PisiUser(AbstractUser):
     pass
+
 
 def test_this(sender, **kwargs):
     print(sender)
@@ -24,4 +25,3 @@ def test_this(sender, **kwargs):
 
 
 pre_social_login.connect(test_this)
-print('signalsdffwssfsdfg')
