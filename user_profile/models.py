@@ -8,7 +8,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 #     user = models.ForeignKey(PisiUser, on_delete=models.DO_NOTHING)
 
 
-MAX_POINTS = 1000
+MAX_POINTS = 505000
 MIN_POINTS = 0
 MAX_LEVEL = 100
 MIN_LEVEL = 0
@@ -57,15 +57,19 @@ class Skill(models.Model):
     subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     pic = models.URLField()
-    # point = models.IntegerField(default=0,
-    #                            validators=[MaxValueValidator(MAX_POINTS),
-    #                                        MinValueValidator(MIN_POINTS)]
-    #                            )
-    lvl = models.IntegerField(
-        default=0,
-        validators=[MaxValueValidator(MAX_LEVEL),
-                    MinValueValidator(MIN_LEVEL)]
-    )
+    exp = models.IntegerField(default=0,
+                               validators=[MaxValueValidator(MAX_POINTS),
+                                           MinValueValidator(MIN_POINTS)]
+                               )
+    def get_lvl(self):
+        exp = self.exp
+        cap = 100
+        counter = 0
+        while exp > 0:
+            exp - cap
+            cap += 100
+            counter+=1
+        return counter
 
 # class Repository(models.Model):
 #     name = models.CharField(max_length=100)
