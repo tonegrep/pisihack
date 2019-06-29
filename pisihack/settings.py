@@ -11,20 +11,32 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import environ
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+root = environ.Path(__file__) - 2
+SITE_ROOT = root()
+
+env = environ.Env(
+    DEBUG=(bool, True),
+    DATABASE_URL=(str, 'sqlite:///database/default.db'),
+    ALLOWED_HOSTS=(list, ['*']),
+)
+environ.Env.read_env(env_file=os.path.join(root.root, '.env'))
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'gml5ckk3e5zm45cjky15dl04y7ii_f=cpbi1#62nuk4q7k79_l'
+SECRET_KEY = env('SECRET_KEY')
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env('DEBUG')
+TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = env('ALLOWED_HOSTS')
 
 ### CUSTOM STUFF GOES HERE ###
 
