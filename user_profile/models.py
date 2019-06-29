@@ -74,3 +74,5 @@ class Skill(models.Model):
 
 
 # Create your models here.
+from . import signals
+

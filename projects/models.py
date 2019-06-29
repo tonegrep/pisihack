@@ -1,6 +1,5 @@
 from django.db import models
 
-from pisihack import settings
 from user_profile.models import UserProfile
 from users.models import PisiUser
 from model_utils.choices import Choices
