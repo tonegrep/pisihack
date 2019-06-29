@@ -57,6 +57,8 @@ ACCOUNT_USERNAME_REQUIRED = False
 
 SOCIALACCOUNT_STORE_TOKENS = True
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 ### END CUSTOM STUFF ###
 
 # Application definition
