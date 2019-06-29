@@ -26,6 +26,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+### CUSTOM STUFF GOES HERE ###
+
+AUTH_USER_MODEL = 'users.PisiUser'
+
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'index'
+
+### END CUSTOM STUFF ###
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -35,7 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
+
+    'front',
+    'users',
 ]
 
 MIDDLEWARE = [
