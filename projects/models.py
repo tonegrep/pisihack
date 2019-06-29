@@ -35,5 +35,10 @@ class Project(models.Model):
         MinValueValidator(COMPLETION_ZERO),
         MaxValueValidator(COMPLETION_DONE)
     ])
+    vacant_slots = models.IntegerField(default=0, validators=[
+                            MinValueValidator(0),
+                            MaxValueValidator(128)
+                        ])
+
 
 # Create your models here.
