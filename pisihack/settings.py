@@ -77,6 +77,8 @@ INSTALLED_APPS = [
 
     'front',
     'users',
+    'user_profile',
+    'projects',
 ]
 
 MIDDLEWARE = [

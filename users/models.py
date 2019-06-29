@@ -1,16 +1,12 @@
-from django.contrib.auth.models import AbstractUser
 from django.db import models
 import requests
-
-
-# Create your models here.
-
-class PisiUser(AbstractUser):
-    pass
+from django.contrib.auth.models import AbstractUser
 
 
 from allauth.socialaccount.signals import pre_social_login
 
+class PisiUser(AbstractUser):
+    pass
 
 def test_this(sender, **kwargs):
     print(sender)
