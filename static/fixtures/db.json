@@ -1,107 +1,101 @@
 [
 {
-  "model": "sessions.session",
-  "pk": "w1hj8yxdj1j1pxkgayxwp1odux5wcodh",
-  "fields": {
-    "session_data": "NzllN2I1MGQ2MDMyYmNlYjgzZjM0ZWJkYzYzMDQ1YTQ2YTBmMDM4Zjp7InNvY2lhbGFjY291bnRfc29jaWFsbG9naW4iOnsiYWNjb3VudCI6eyJpZCI6bnVsbCwidXNlcl9pZCI6bnVsbCwicHJvdmlkZXIiOiJnaXRodWIiLCJ1aWQiOiI0MDAyMTU0OSIsImxhc3RfbG9naW4iOm51bGwsImRhdGVfam9pbmVkIjpudWxsLCJleHRyYV9kYXRhIjp7ImxvZ2luIjoidG9uZWdyZXAiLCJpZCI6NDAwMjE1NDksIm5vZGVfaWQiOiJNRFE2VlhObGNqUXdNREl4TlRRNSIsImF2YXRhcl91cmwiOiJodHRwczovL2F2YXRhcnMzLmdpdGh1YnVzZXJjb250ZW50LmNvbS91LzQwMDIxNTQ5P3Y9NCIsImdyYXZhdGFyX2lkIjoiIiwidXJsIjoiaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS91c2Vycy90b25lZ3JlcCIsImh0bWxfdXJsIjoiaHR0cHM6Ly9naXRodWIuY29tL3RvbmVncmVwIiwiZm9sbG93ZXJzX3VybCI6Imh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vdXNlcnMvdG9uZWdyZXAvZm9sbG93ZXJzIiwiZm9sbG93aW5nX3VybCI6Imh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vdXNlcnMvdG9uZWdyZXAvZm9sbG93aW5ney9vdGhlcl91c2VyfSIsImdpc3RzX3VybCI6Imh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vdXNlcnMvdG9uZWdyZXAvZ2lzdHN7L2dpc3RfaWR9Iiwic3RhcnJlZF91cmwiOiJodHRwczovL2FwaS5naXRodWIuY29tL3VzZXJzL3RvbmVncmVwL3N0YXJyZWR7L293bmVyfXsvcmVwb30iLCJzdWJzY3JpcHRpb25zX3VybCI6Imh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vdXNlcnMvdG9uZWdyZXAvc3Vic2NyaXB0aW9ucyIsIm9yZ2FuaXphdGlvbnNfdXJsIjoiaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS91c2Vycy90b25lZ3JlcC9vcmdzIiwicmVwb3NfdXJsIjoiaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS91c2Vycy90b25lZ3JlcC9yZXBvcyIsImV2ZW50c191cmwiOiJodHRwczovL2FwaS5naXRodWIuY29tL3VzZXJzL3RvbmVncmVwL2V2ZW50c3svcHJpdmFjeX0iLCJyZWNlaXZlZF9ldmVudHNfdXJsIjoiaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS91c2Vycy90b25lZ3JlcC9yZWNlaXZlZF9ldmVudHMiLCJ0eXBlIjoiVXNlciIsInNpdGVfYWRtaW4iOmZhbHNlLCJuYW1lIjpudWxsLCJjb21wYW55IjoiVGVjb24gTVQiLCJibG9nIjoiIiwibG9jYXRpb24iOm51bGwsImVtYWlsIjpudWxsLCJoaXJlYWJsZSI6bnVsbCwiYmlvIjoiMTkgeS5vLlxyXG5TeXN0ZW0gVmVyaWZpY2F0aW9uIEVuZ2luZWVyXHJcbiIsInB1YmxpY19yZXBvcyI6NiwicHVibGljX2dpc3RzIjowLCJmb2xsb3dlcnMiOjAsImZvbGxvd2luZyI6MSwiY3JlYXRlZF9hdCI6IjIwMTgtMDYtMDdUMDg6MTU6MTdaIiwidXBkYXRlZF9hdCI6IjIwMTktMDYtMjlUMDk6NDE6MzJaIn19LCJ1c2VyIjp7ImlkIjpudWxsLCJwYXNzd29yZCI6IiFlelYwQXFaemh5S2RnMlJVSGpKUGxKSDRIUnJoeU91bGF6S3hLMEFRIiwibGFzdF9sb2dpbiI6bnVsbCwiaXNfc3VwZXJ1c2VyIjpmYWxzZSwidXNlcm5hbWUiOiJ0b25lZ3JlcCIsImZpcnN0X25hbWUiOiIiLCJsYXN0X25hbWUiOiIiLCJlbWFpbCI6IiIsImlzX3N0YWZmIjpmYWxzZSwiaXNfYWN0aXZlIjp0cnVlLCJkYXRlX2pvaW5lZCI6IjIwMTktMDYtMjlUMTI6MjM6MjMuMTYxWiJ9LCJzdGF0ZSI6eyJwcm9jZXNzIjoibG9naW4iLCJzY29wZSI6IiIsImF1dGhfcGFyYW1zIjoiIn0sImVtYWlsX2FkZHJlc3NlcyI6W10sInRva2VuIjp7ImlkIjpudWxsLCJhcHBfaWQiOjEsImFjY291bnRfaWQiOm51bGwsInRva2VuIjoiN2YwNGY5YjFkY2JiYTBlM2EyMzg4MGJjODRmMjRjNmZhYmViOGZiMyIsInRva2VuX3NlY3JldCI6IiIsImV4cGlyZXNfYXQiOm51bGx9fSwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhbGxhdXRoLmFjY291bnQuYXV0aF9iYWNrZW5kcy5BdXRoZW50aWNhdGlvbkJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2ZGU0NmM1YTEyMDdmNGZjZWQ1NzY3NTRhNDYwMWE5Y2VhYjdiMTJlIn0=",
-    "expire_date": "2019-07-13T12:24:23.967Z"
-  }
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+        "domain": "127.0.0.1",
+        "name": "example.com"
+    }
 },
 {
-  "model": "sites.site",
-  "pk": 1,
-  "fields": {
-    "domain": "127.0.0.1",
-    "name": "example.com"
-  }
+    "model": "socialaccount.socialapp",
+    "pk": 1,
+    "fields": {
+        "provider": "github",
+        "name": "pisi-test",
+        "client_id": "Iv1.28217937759dad51",
+        "secret": "1c4757f1bd8ad67bf76c8367014a9da0746c66f9",
+        "key": "",
+        "sites": [
+            [
+                "127.0.0.1"
+            ]
+        ]
+    }
 },
 {
-  "model": "socialaccount.socialapp",
-  "pk": 1,
-  "fields": {
-    "provider": "github",
-    "name": "pisi",
-    "client_id": "Iv1.28217937759dad51",
-    "secret": "1c4757f1bd8ad67bf76c8367014a9da0746c66f9",
-    "key": "",
-    "sites": [
-      [
-        "127.0.0.1"
-      ]
-    ]
-  }
+    "model": "socialaccount.socialtoken",
+    "pk": 1,
+    "fields": {
+        "app": 1,
+        "account": 1,
+        "token": "91357c1afc6bcaa7a63cf765d7a2d3e11f4eec70",
+        "token_secret": "",
+        "expires_at": null
+    }
 },
 {
-  "model": "socialaccount.socialtoken",
-  "pk": 1,
-  "fields": {
-    "app": 1,
-    "account": 1,
-    "token": "cd2a08422d21244374210ba8e4b02e1f5a707a30",
-    "token_secret": "",
-    "expires_at": null
-  }
+    "model": "user_profile.pisiuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$Wn4XLR0pOnMH$tM+Wct1zx2cLrfbjdr9FQyxrbDUTzD4DE5IoORhUrNQ=",
+        "last_login": "2019-07-02T22:30:31.651Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@adm.in",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2019-07-02T22:30:26.023Z",
+        "total_points": 0,
+        "groups": [],
+        "user_permissions": []
+    }
 },
 {
-  "model": "users.pisiuser",
-  "pk": 1,
-  "fields": {
-    "password": "pbkdf2_sha256$150000$TruGqedEEMKT$Cqe3bOTRUCnt4t1FMP3r3mXfzOjtdEEPmRst9yBa64w=",
-    "last_login": "2019-06-29T12:19:52.332Z",
-    "is_superuser": true,
-    "username": "pepe",
-    "first_name": "",
-    "last_name": "",
-    "email": "tonegrep@gmail.com",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2019-06-29T12:17:27.867Z",
-    "groups": [],
-    "user_permissions": []
-  }
+    "model": "user_profile.pisiuser",
+    "pk": 2,
+    "fields": {
+        "password": "!UAhw71ghLnLzjtKfQWJZzS4Zvi9eXGtNWfrWnhE3",
+        "last_login": "2019-07-02T22:32:12.656Z",
+        "is_superuser": false,
+        "username": "ontrigger",
+        "first_name": "ontrigger",
+        "last_name": "",
+        "email": "firewarpcd@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-07-02T22:32:09.623Z",
+        "total_points": 0,
+        "groups": [],
+        "user_permissions": []
+    }
 },
 {
-  "model": "users.pisiuser",
-  "pk": 2,
-  "fields": {
-    "password": "!tmwaeC1vY7WqGk7XkY9t4sL1pWxzFYs3VZUf5x7E",
-    "last_login": "2019-06-29T12:24:23.898Z",
-    "is_superuser": false,
-    "username": "cherenkov2077",
-    "first_name": "",
-    "last_name": "",
-    "email": "cherenkov2077@gmail.com",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2019-06-29T12:23:23.161Z",
-    "groups": [],
-    "user_permissions": []
-  }
+    "model": "socialaccount.socialaccount",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "ontrigger"
+        ],
+        "provider": "github",
+        "uid": "8556074",
+        "last_login": "2019-07-02T22:32:11.997Z",
+        "date_joined": "2019-07-02T22:32:11.997Z",
+        "extra_data": "{\"login\": \"ontrigger\", \"id\": 8556074, \"node_id\": \"MDQ6VXNlcjg1NTYwNzQ=\", \"avatar_url\": \"https://avatars2.githubusercontent.com/u/8556074?v=4\", \"gravatar_id\": \"\", \"url\": \"https://api.github.com/users/ontrigger\", \"html_url\": \"https://github.com/ontrigger\", \"followers_url\": \"https://api.github.com/users/ontrigger/followers\", \"following_url\": \"https://api.github.com/users/ontrigger/following{/other_user}\", \"gists_url\": \"https://api.github.com/users/ontrigger/gists{/gist_id}\", \"starred_url\": \"https://api.github.com/users/ontrigger/starred{/owner}{/repo}\", \"subscriptions_url\": \"https://api.github.com/users/ontrigger/subscriptions\", \"organizations_url\": \"https://api.github.com/users/ontrigger/orgs\", \"repos_url\": \"https://api.github.com/users/ontrigger/repos\", \"events_url\": \"https://api.github.com/users/ontrigger/events{/privacy}\", \"received_events_url\": \"https://api.github.com/users/ontrigger/received_events\", \"type\": \"User\", \"site_admin\": false, \"name\": \"ontrigger\", \"company\": null, \"blog\": \"\", \"location\": null, \"email\": null, \"hireable\": null, \"bio\": null, \"public_repos\": 8, \"public_gists\": 1, \"followers\": 2, \"following\": 0, \"created_at\": \"2014-08-26T11:35:33Z\", \"updated_at\": \"2019-06-29T09:48:00Z\"}"
+    }
 },
 {
-  "model": "socialaccount.socialaccount",
-  "pk": 1,
-  "fields": {
-    "user": [
-      "cherenkov2077"
-    ],
-    "provider": "github",
-    "uid": "40021549",
-    "last_login": "2019-06-29T12:24:23.410Z",
-    "date_joined": "2019-06-29T12:23:45.146Z",
-    "extra_data": "{\"login\": \"tonegrep\", \"id\": 40021549, \"node_id\": \"MDQ6VXNlcjQwMDIxNTQ5\", \"avatar_url\": \"https://avatars3.githubusercontent.com/u/40021549?v=4\", \"gravatar_id\": \"\", \"url\": \"https://api.github.com/users/tonegrep\", \"html_url\": \"https://github.com/tonegrep\", \"followers_url\": \"https://api.github.com/users/tonegrep/followers\", \"following_url\": \"https://api.github.com/users/tonegrep/following{/other_user}\", \"gists_url\": \"https://api.github.com/users/tonegrep/gists{/gist_id}\", \"starred_url\": \"https://api.github.com/users/tonegrep/starred{/owner}{/repo}\", \"subscriptions_url\": \"https://api.github.com/users/tonegrep/subscriptions\", \"organizations_url\": \"https://api.github.com/users/tonegrep/orgs\", \"repos_url\": \"https://api.github.com/users/tonegrep/repos\", \"events_url\": \"https://api.github.com/users/tonegrep/events{/privacy}\", \"received_events_url\": \"https://api.github.com/users/tonegrep/received_events\", \"type\": \"User\", \"site_admin\": false, \"name\": null, \"company\": \"Tecon MT\", \"blog\": \"\", \"location\": null, \"email\": null, \"hireable\": null, \"bio\": \"19 y.o.\\r\\nSystem Verification Engineer\\r\\n\", \"public_repos\": 6, \"public_gists\": 0, \"followers\": 0, \"following\": 1, \"created_at\": \"2018-06-07T08:15:17Z\", \"updated_at\": \"2019-06-29T09:41:32Z\"}"
-  }
-},
-{
-  "model": "account.emailaddress",
-  "pk": 1,
-  "fields": {
-    "user": [
-      "cherenkov2077"
-    ],
-    "email": "cherenkov2077@gmail.com",
-    "verified": false,
-    "primary": true
-  }
+    "model": "account.emailaddress",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "ontrigger"
+        ],
+        "email": "firewarpcd@gmail.com",
+        "verified": false,
+        "primary": true
+    }
 }
 ]
