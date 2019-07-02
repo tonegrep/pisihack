@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from .models import Skill, Subject
 from projects.models import Repository
-from users.models import PisiUser
+from user_profile.models import PisiUser
+
 
 class ProfileView(TemplateView):
     template_name="profile.html"

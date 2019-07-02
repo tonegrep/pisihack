@@ -1,6 +1,6 @@
 # users/forms.py
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
-from .models import PisiUser
+from user_profile.models import PisiUser
 
 
 class PisiUserCreationForm(UserCreationForm):

@@ -1,7 +1,6 @@
 from django.db import models
 
-from user_profile.models import UserProfile
-from users.models import PisiUser
+from user_profile.models import PisiUser
 from model_utils.choices import Choices
 from model_utils.fields import StatusField
 from django.core.validators import MaxValueValidator, MinValueValidator
@@ -16,15 +15,15 @@ class Repository(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField(max_length=3092)
 
-    author = models.ForeignKey(UserProfile, on_delete=models.CASCADE,
+    author = models.ForeignKey(PisiUser, on_delete=models.CASCADE,
                                default='')
 
 
 class Project(models.Model):
-    maintainer = models.ForeignKey(UserProfile,
+    maintainer = models.ForeignKey(PisiUser,
                                    on_delete=models.DO_NOTHING,
                                    related_name='%(class)s_project_leader')
-    contributors = models.ManyToManyField(UserProfile,
+    contributors = models.ManyToManyField(PisiUser,
                                           related_name='%(class)s_project_participant')
     repos = models.ManyToManyField(Repository)
     STATUS = Choices('abandoned', 'in development',

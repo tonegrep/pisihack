@@ -40,7 +40,7 @@ ALLOWED_HOSTS = env('ALLOWED_HOSTS')
 
 ### CUSTOM STUFF GOES HERE ###
 
-AUTH_USER_MODEL = 'users.PisiUser'
+AUTH_USER_MODEL = 'user_profile.PisiUser'
 
 LOGIN_REDIRECT_URL = 'index'
 LOGOUT_REDIRECT_URL = 'index'

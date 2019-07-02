@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
 from users.forms import PisiUserChangeForm, PisiUserCreationForm
-from users.models import PisiUser
+from user_profile.models import PisiUser
 
 
 class PisiUserAdmin(UserAdmin):

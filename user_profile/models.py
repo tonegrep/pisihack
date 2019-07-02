@@ -1,8 +1,8 @@
+from django.contrib.auth.models import AbstractUser
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
 from pisihack import settings
-from users.models import PisiUser
-from django.core.validators import MaxValueValidator, MinValueValidator
 
 # class Profile(models.Model):
 #     user = models.ForeignKey(PisiUser, on_delete=models.DO_NOTHING)
@@ -14,12 +14,7 @@ MAX_LEVEL = 100
 MIN_LEVEL = 0
 
 
-class UserProfile(models.Model):
-    user = models.OneToOneField(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE
-    )
-
+class PisiUser(AbstractUser):
     total_points = models.IntegerField(
         default=0,
         validators=[MaxValueValidator(MAX_POINTS),
@@ -29,7 +24,7 @@ class UserProfile(models.Model):
 
 # ex: backend, system programming etc.
 class Subject(models.Model):
-    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
+    user = models.ForeignKey(PisiUser, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     pic = models.URLField()
     lvl = models.IntegerField(
@@ -53,14 +48,15 @@ class Subject(models.Model):
 
 # ex: LLVM, SystemC, Vue.js etc.
 class Skill(models.Model):
-    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
+    user = models.ForeignKey(PisiUser, on_delete=models.CASCADE)
     subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     pic = models.URLField()
     exp = models.IntegerField(default=0,
-                               validators=[MaxValueValidator(MAX_POINTS),
-                                           MinValueValidator(MIN_POINTS)]
-                               )
+                              validators=[MaxValueValidator(MAX_POINTS),
+                                          MinValueValidator(MIN_POINTS)]
+                              )
+
     def get_lvl(self):
         exp = self.exp
         cap = 100
@@ -68,15 +64,7 @@ class Skill(models.Model):
         while exp > 0:
             exp - cap
             cap += 100
-            counter+=1
+            counter += 1
         return counter
 
-# class Repository(models.Model):
-#     name = models.CharField(max_length=100)
-#     url = models.URLField()
-#     maintainer = models.ForeignKey(PisiUser, on_delete=models.DO_NOTHING)
-
-
-# Create your models here.
-from . import signals
 
