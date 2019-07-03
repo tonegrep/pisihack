@@ -2,12 +2,6 @@ from django.contrib.auth.models import AbstractUser
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
-from pisihack import settings
-
-# class Profile(models.Model):
-#     user = models.ForeignKey(PisiUser, on_delete=models.DO_NOTHING)
-
-
 MAX_POINTS = 505000
 MIN_POINTS = 0
 MAX_LEVEL = 100
@@ -68,3 +62,4 @@ class Skill(models.Model):
         return counter
 
 
+import user_profile.signals

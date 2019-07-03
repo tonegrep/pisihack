@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.db import models
 
 from user_profile.models import PisiUser
@@ -17,6 +19,8 @@ class Repository(models.Model):
 
     author = models.ForeignKey(PisiUser, on_delete=models.CASCADE,
                                default='')
+
+    last_updated = models.DateTimeField(default=datetime.min)
 
 
 class Project(models.Model):
