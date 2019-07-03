@@ -68,6 +68,7 @@ from allauth.account.signals import user_signed_up
 # use this in prod instead
 # user_signed_up.connect(test_other)
 from django.dispatch import receiver
+from django.utils.timezone import make_aware
 from github import Github
 
 from projects.models import Repository
@@ -93,7 +94,7 @@ def update_repos(sender, **kwargs):
     for repo in repo_objs:
         gh_repo = repos[repo.repo_id]
         if gh_repo.modified_at > repo.last_updated:
-            repo.last_updated = gh_repo.modified_at
+            repo.last_updated = make_aware(gh_repo.modified_at)
             to_update.append(repo)
 
     Repository.objects.bulk_update(to_update, ['last_updated'])
