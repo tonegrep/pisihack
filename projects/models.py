@@ -22,6 +22,9 @@ class Repository(models.Model):
 
     last_updated = models.DateTimeField(default=datetime.min)
 
+    def __str__(self):
+        return self.name
+
 
 class Project(models.Model):
     maintainer = models.ForeignKey(PisiUser,

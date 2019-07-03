@@ -46,10 +46,11 @@ class Skill(models.Model):
     subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     pic = models.URLField()
-    exp = models.IntegerField(default=0,
-                              validators=[MaxValueValidator(MAX_POINTS),
-                                          MinValueValidator(MIN_POINTS)]
-                              )
+    exp = models.IntegerField(
+        default=0,
+        validators=[MaxValueValidator(MAX_POINTS),
+                    MinValueValidator(MIN_POINTS)]
+    )
 
     def get_lvl(self):
         exp = self.exp
@@ -60,6 +61,3 @@ class Skill(models.Model):
             cap += 100
             counter += 1
         return counter
-
-
-import user_profile.signals

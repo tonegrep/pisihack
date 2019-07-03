@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.urls import reverse_lazy
 from django.views.generic import TemplateView, CreateView
 
 from .forms import ProjectCreationForm
@@ -8,6 +9,7 @@ from .models import Project
 class ProjectCreationView(CreateView):
     template_name = 'new_project.html'
     form_class = ProjectCreationForm
+    success_url = reverse_lazy('index')
 
     def get_initial(self):
         initial = super().get_initial()
