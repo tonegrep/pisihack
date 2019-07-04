@@ -18,6 +18,7 @@ class ProjectCreationForm(ModelForm):
 
     def save(self, commit=True):
         instance = super().save(commit=False)
+        print(dir(instance))
         instance.maintainer = self.maintainer
         if commit:
             instance.save()

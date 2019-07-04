@@ -1,11 +1,12 @@
 from datetime import datetime
 
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
-
-from user_profile.models import PisiUser
+from django.utils.translation import ugettext_lazy as _
 from model_utils.choices import Choices
 from model_utils.fields import StatusField
-from django.core.validators import MaxValueValidator, MinValueValidator
+
+from user_profile.models import PisiUser
 
 COMPLETION_ZERO = 0
 COMPLETION_DONE = 100
@@ -41,10 +42,18 @@ class Project(models.Model):
         MinValueValidator(COMPLETION_ZERO),
         MaxValueValidator(COMPLETION_DONE)
     ])
-    vacant_slots = models.IntegerField(default=0, validators=[
-                            MinValueValidator(0),
-                            MaxValueValidator(128)
-                        ])
+    vacant_slots = models.IntegerField(
+        default=0, validators=[
+            MinValueValidator(0),
+            MaxValueValidator(128)
+        ])
 
+    VISIBILITY_CHOICES = (
+        (1, _("Public")),
+        (2, _("Private")),
+    )
+
+    visibility = models.SmallIntegerField(
+        choices=VISIBILITY_CHOICES, default=1)
 
 # Create your models here.
